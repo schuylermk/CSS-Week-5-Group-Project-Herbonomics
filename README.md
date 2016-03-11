@@ -33,7 +33,7 @@ None at this time.
 
 ## Setup
 
-1. Clone this repository using the command `git clone https://github.com/OskarRadon/Herbonomics.git`.
+1. Clone this repository using the command `git clone https://github.com/schuylermk/CSS-Week-5-Group-Project.git`. (To see the repository to which all work was originally pushed, and read individual commits, etc. visit [Herbonomics](https://github.com/Fallenstedt/Herbonomics).)
 2. Change directory into the top level of the project folder.
 3. Install Composer (https://getcomposer.org) and then run the command `composer install` to download the Silex and Twig vendor files.
 4. Change directory into the `web` folder and run the command `php -S localhost:8000` start your server.
