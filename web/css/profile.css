@@ -1,0 +1,310 @@
+@import url(https://fonts.googleapis.com/css?family=Cardo:400,700,400italic|Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Istok+Web:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Cardo:400,700,400italic|Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Istok+Web:400,400italic,700,700italic);
+#img1 {
+  background: url("../img/1.jpg");
+  background-position: top;
+  background-size: cover; }
+
+#img2 {
+  background: url("../img/2.jpg");
+  background-position: top;
+  background-size: cover; }
+
+#img1 {
+  background: url("../img/1.jpg");
+  background-position: top;
+  background-size: cover; }
+
+#img2 {
+  background: url("../img/2.jpg");
+  background-position: top;
+  background-size: cover; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 80px 0 0;
+  background: #E1DEE3; }
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Montserrat', serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+  height: 80px;
+  background: white;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 1px 20px #353535; }
+  header a {
+    color: #009B3E;
+    text-decoration: none; }
+  header h4 {
+    margin-left: 20px;
+    font-size: 1.2em; }
+    @media (min-width: 600px) {
+      header h4 {
+        font-size: 1.6em;
+        margin-left: 40px; } }
+    @media all and (min-width: 1200px) {
+      header h4 {
+        font-size: 1.8em; } }
+  header nav {
+    margin-right: 20px; }
+    @media (min-width: 600px) {
+      header nav {
+        margin-right: 40px; } }
+    header nav a {
+      color: #009B3E;
+      text-decoration: none;
+      font-size: 0.9em; }
+      header nav a:first-of-type {
+        margin-right: 5px; }
+        @media (min-width: 600px) {
+          header nav a:first-of-type {
+            margin-right: 20px; } }
+      @media (min-width: 600px) {
+        header nav a {
+          font-size: 1em; } }
+      @media all and (min-width: 1200px) {
+        header nav a {
+          font-size: 1.2em; } }
+
+.remodal {
+  height: 90%;
+  width: 90%;
+  padding: 0;
+  border-radius: 3px;
+  text-align: center;
+  background: #E1DEE3;
+  font-family: 'Istok Web', serif;
+  font-weight: 400;
+  font-style: normal; }
+  @media (min-width: 600px) {
+    .remodal {
+      height: 68%;
+      width: 60%; } }
+  .remodal .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center; }
+    @media (max-height: 850px) {
+      .remodal .flex-container {
+        flex-direction: row; } }
+  .remodal h2 {
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.4em;
+    color: #009B3E; }
+    @media (max-height: 850px) {
+      .remodal h2 {
+        padding: 20px; } }
+    @media (min-width: 600px) {
+      .remodal h2 {
+        margin-top: 40px; } }
+  .remodal form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media (min-width: 600px) {
+      .remodal form {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%; } }
+    .remodal form input, .remodal form footer button, footer .remodal form button {
+      width: 70%;
+      border: 1px solid #bababa;
+      border-radius: 3px;
+      padding: 3px;
+      margin: 0; }
+      @media (min-width: 600px) {
+        .remodal form input, .remodal form footer button, footer .remodal form button {
+          width: 50%; } }
+    .remodal form label {
+      margin: 0; }
+      .remodal form label:nth-of-type(even) {
+        margin-top: 10px; }
+    .remodal form button {
+      margin-top: 10px;
+      width: 80px;
+      padding: 5px;
+      border: none;
+      font-size: .9em;
+      background: #FF473A;
+      color: white;
+      border-bottom: 3px solid #d30e00; }
+
+* form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px; }
+  @media (min-width: 600px) {
+    * form {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 350px; } }
+  @media (min-width: 600px) {
+    * form label {
+      margin: 0 10px 10px 0; } }
+  * form input, * form footer button, footer * form button {
+    border: 1px solid #bababa;
+    border-radius: 3px;
+    padding: 3px;
+    margin: 0 10px 10px 0; }
+  * form select {
+    margin: 0 0 10px; }
+    @media (min-width: 600px) {
+      * form select {
+        width: 150px; } }
+  * form button {
+    margin-top: 10px;
+    border: none;
+    font-size: .9em;
+    background: #FF473A;
+    color: white;
+    border-bottom: 3px solid #d30e00; }
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #353535;
+  margin-top: 40px;
+  font-family: 'Montserrat', serif;
+  font-weight: 400;
+  font-style: normal;
+  align-items: center;
+  color: white; }
+  @media (min-width: 600px) {
+    footer form {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      width: 100%; } }
+  footer input, footer button {
+    outline: none;
+    font-size: .8em;
+    padding: 4px;
+    border: none;
+    text-align: center;
+    border-radius: 2px; }
+    @media (min-width: 600px) {
+      footer input, footer button {
+        font-size: 1em;
+        padding: 10px;
+        width: 250px; } }
+  footer button {
+    background: #FF473A;
+    color: white;
+    border-bottom: 3px solid #d30e00; }
+    @media (min-width: 600px) {
+      footer button {
+        width: 100px; } }
+  footer nav {
+    width: 140px;
+    padding: 40px 0 20px;
+    display: flex;
+    justify-content: space-around; }
+    footer nav a {
+      color: white; }
+      footer nav a:hover {
+        color: #009B3E; }
+
+form button {
+  border: none;
+  border-radius: 3px;
+  background: #FF473A;
+  color: white;
+  border-bottom: 3px solid #d30e00; }
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column; }
+  main a {
+    color: #009B3E; }
+
+table {
+  margin-top: 20px; }
+  table a {
+    color: #009B3E; }
+  table th {
+    font-size: 0.7em;
+    text-align: center; }
+    @media (min-width: 600px) {
+      table th {
+        text-align: left;
+        font-size: 1em;
+        padding: 12px; } }
+  table td {
+    font-size: 0.7em;
+    text-align: center;
+    width: 10vw; }
+    @media (min-width: 600px) {
+      table td {
+        font-size: 1em;
+        padding: 12px; } }
+    @media all and (min-width: 1200px) {
+      table td {
+        width: 100px; } }
+
+body {
+  font-family: 'Montserrat', serif;
+  font-weight: 400;
+  font-style: normal; }
+
+main {
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; }
+
+table {
+  border-collapse: collapse;
+  background: white;
+  font-family: 'Istok Web', serif;
+  font-weight: 400;
+  font-style: normal; }
+  table th {
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+    font-style: normal;
+    border: 1px solid #00913a; }
+  table td {
+    border: 1px solid #00913a; }
+
+.account {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px; }
+  .account h1 {
+    margin-right: 2em; }
+  .account .account-buttons {
+    display: flex;
+    align-items: center; }
+    .account .account-buttons form {
+      margin: 0 10px 0;
+      width: 33%; }
+    .account .account-buttons button {
+      margin-right: 20px; }
+
+.supply h3 {
+  margin-top: 20px;
+  text-align: center; }
+  @media (min-width: 600px) {
+    .supply h3:first-of-type {
+      text-align: left; } }
+
+/*# sourceMappingURL=profile.css.map */

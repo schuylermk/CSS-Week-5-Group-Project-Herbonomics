@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% include '/includes/head.html.twig' %}
+  <link rel="stylesheet" href="../css/main.css" media="screen" title="no title" charset="utf-8">
+  <title>Herbonomics</title>
+</head>
+  <body>
+    <div class="hero">
+      <!-- <div class="wrapper"> -->
+        {% include '/includes/header.html.twig' %}
+        <div class="search-wrap">
+
+          <h3>Join our growing community of cultivators and retailers</h3>
+          <form class="search">
+
+            <input type="text" name="search" placeholder="Search for any strain...">
+            <div class="landing-buttons">
+              <button type="submit" name="btn-submit" class="search" formaction="/dispensary_demands/search" method="get">Search Retailers</button>
+              <button type="submit" name="btn-submit" class="search" formaction="/grower_supply/search" method="get">Search Cultivators</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    <!-- </div> -->
+
+    <!-- MODAL -->
+    {% include '/includes/sign-in.html.twig' %}
+    <!-- <div class="wrapper"> -->
+      <main>
+        <article>
+          <h4>Wholesale Marketplace</h4>
+          <div class="image" id="img1"></div>
+          <p>
+            Herbonomics is an exclusive network for licensed cannabis businesses, featuring free unlimited access to Oregon's leading wholesale cannabis marketplace. Join over 70% of the licensed marijuana retailers and cultivators in Oregon in this simple, centralized connection platform to start growing your business today.
+          </p>
+        </article>
+
+        <article>
+          <h4>Realtime Buying and Selling</h4>
+          <div class="image" id="img2"></div>
+          <p>
+            Our live marketplace can be accessed anytime, anywhere. Cloud based supply-chain management tools help you simplify order fulfillment.
+          </p>
+        </article>
+      </main>
+    <!-- </div> -->
+    {% include '/includes/footer.html.twig' %}
+  </body>
+</html>

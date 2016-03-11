@@ -1,0 +1,48 @@
+@import 'layout/global';
+
+
+main {
+  padding-top: 10px;
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    // .sep {
+    //   align-self: flex-end;
+    //   height: 290px;
+    //   margin-bottom: calc(100vh - 200px);
+    //   border-right: 1px solid $color-border;
+    // }
+  }
+  h2  {
+    @include Montserrat;
+    text-align: center;
+    color: $color-green;
+    padding: 20px 0 15px;
+    margin-bottom: 0;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    label {
+      @include Istok;
+      margin: 5px 0 2px;
+    }
+    input {
+      width: 70%;
+      border: 1px solid $color-border;
+      border-radius: 3px;
+      padding: 3px;
+      @include tablet {
+        width: 40vw;
+        margin-bottom: 20px;
+      }
+    }
+    button {
+      margin-top: 10px;
+      padding: 5px 10px;
+      font-size: 1em;
+    }
+  }
+}
